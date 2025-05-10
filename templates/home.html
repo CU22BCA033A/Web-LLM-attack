@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to Vulnerable LLM App</h1>
+<p>This application contains intentional vulnerabilities for educational purposes.</p>
+<div class="features">
+    <h2>Available Features:</h2>
+    <ul>
+        <li>User Search (SQL Injection vulnerable)</li>
+        <li>AI Chat (Prompt Injection vulnerable)</li>
+        <li>User Login (Authentication bypass possible)</li>
+        <li>User API (Information disclosure)</li>
+    </ul>
+</div>
+{% endblock %}

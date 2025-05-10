@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Search Users{% endblock %}
+
+{% block content %}
+<h1>Search Users</h1>
+<form method="POST">
+    <input type="text" name="query" value="{{ query if query else '' }}" placeholder="Search by username, email or bio">
+    <input type="submit" value="Search">
+</form>
+
+{% if results %}
+    <hr>
+    <h2>Search Results</h2>
+    <div class="results">
+        {% for user in results %}
+            <div class="user-card">
+                <h3>{{ user[1] }}</h3>
+                <p>Email: {{ user[3] }}</p>
+                <p class="bio">{{ user[4] if user[4] else 'No bio' }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+{% endblock %}
