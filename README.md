@@ -1,8 +1,8 @@
-Introduction to LLM Attacks
+*Introduction to LLM Attacks*
 Large Language Models (LLMs) are advanced AI systems trained to understand and generate human-like text. While LLMs offer powerful capabilities in tasks like summarization, conversation, and data analysis, they are also prone to new forms of attacks. LLM attacks exploit the natural language processing abilities of these models through malicious inputs, commonly known as prompt injection. These attacks can cause unintended behavior, data leakage, or manipulation of model outputs, posing significant security risks when integrated into applications.
 This lab project explores how LLMs and other traditional web application components can be vulnerable, emphasizing the importance of secure AI integration.
 ________________________________________
-Overview
+Overvie
 This report provides a comprehensive vulnerability assessment of the "Web LLM Attack" lab application. The application is intentionally designed to demonstrate common web and AI security vulnerabilities for educational purposes. The following components were reviewed and tested:
 •	User Search: SQL Injection Vulnerability
 •	AI Chat: Prompt Injection Vulnerability
